@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CHARACTER COUNTER</h1>
+
+        <p class="description">
+            Type your message in the box below.
+        </p>
+
+        <label for="message">Your Message</label>
+
+        <textarea
+            id="message"
+            placeholder="Start typing your message..."
+            maxlength="200"
+            rows="6"
+        ></textarea>
+
+        <div class="counter">
+            <span id="count">0</span>/200 characters
+        </div>
+
+        <p id="remaining">200 characters remaining</p>
+
+        <p id="warning" role="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
